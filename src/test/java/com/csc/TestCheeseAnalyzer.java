@@ -1,5 +1,13 @@
 package com.csc;
 
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 public class TestCheeseAnalyzer {
-  // You can put test code here
+
+    @Test
+    void testMainRunsWithoutError() {
+        System.out.println("Running CheeseAnalyzer main...");
+        assertDoesNotThrow(() -> CheeseAnalyzer.main(null));
+    }
 }
